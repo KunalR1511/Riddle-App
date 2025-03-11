@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: "DM Serif Text", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+/*-----------------------------------------------------------------------------------------*/
+/*Navbar Formatting*/
+.navbar{
+    background:black;
+    color: white;
+}
+.navbar-elements{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.navbar-elements a{
+    text-decoration: none;
+    color: white;
+}
+#logo{
+    width: 40px;
+    height: 40px;;
+}
+#name{
+    margin-right: auto;
+}
+.navbar-elements li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+/*------------------------------------------------------------------------------------------*/
+/*Riddle Box Formatting*/
+.riddle-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: fit-content;
+    margin: auto;
+    margin-top: 150px;
+    padding: 20px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+}
+.riddle-text{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin:5px;
+}
+.riddle-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#refresh-btn, #answer-btn{
+    margin: 10px;
+    padding: 10px;
+    font: inherit;
+}
+
+@media(max-height: 500px)
+{
+    .riddle-box{
+        margin-top: 100px;
+    }
+}
